@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics"
+    android:background="@drawable/debesys">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangle3"
+        android:text="Nicely done!
+If you were a surgeon, in that amount of time you could’ve performed a heart Surgery."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:fontFamily="@font/amatica_sc_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/praleistasLaikas" />
+
+    <TextView
+        android:id="@+id/wastemy2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/wasted"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="80sp"
+        app:fontFamily="@font/amatica_sc_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/praleistasLaikas"
+        android:layout_width="363dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangleforfact"
+        android:text="00D 00H 00M"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:fontFamily="@font/amatica_sc_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wastemy2" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/menuB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/menubutton" />
+
+    <ImageButton
+        android:id="@+id/returnbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/returnB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/returnbutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

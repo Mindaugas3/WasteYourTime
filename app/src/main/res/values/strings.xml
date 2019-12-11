@@ -1,4 +1,54 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="action_settings">Settings</string>
+    <string name="waste_your_">Waste\nYour\nTime\n</string>
+    <string name="LOGin">Log In</string>
+    <string name="SIGNup">Sign Up</string>
+    <string name="Continue">Continue</string>
+    <string name="interests">Pick your interests</string>
+    <string name="next">Next>></string>
+    <string name="ani">Animals</string>
+    <string name="his">History</string>
+    <string name="art">Art</string>
+    <string name="nat">Nature</string>
+    <string name="food">Food</string>
+    <string name="mov">Movies</string>
+    <string name="tech">Technology</string>
+    <string name="med">Medicine</string>
+    <string name="pol">Politics</string>
+    <string name="mus">Music</string>
+    <string name="spo">Sports</string>
+    <string name="sci">Science</string>
+    <string name="cel">Celebrities</string>
+    <string name="dan">Dance</string>
+    <string name="vid">Video games</string>
+    <string name="books">Books</string>
+    <string name="arch">Architecture</string>
+    <string name="beu">Beauty</string>
+    <string name="fash">Fashion</string>
+    <string name="tra">Travel</string>
+    <string name="geo">Geography</string>
+    <string name="tv">TV</string>
+    <string name="econ">Economics</string>
+    <string name="cri">Crime</string>
+    <string name="psy">Psychology</string>
+    <string name="waste">I will waste my time on:</string>
+    <string name="random">Random facts</string>
+    <string name="interactive">Interactive facts</string>
+    <string name="generateFact">Generate fact</string>
+    <string name="generateInterFact">Generate interactive fact</string>
+    <string name="fav">Favourites</string>
+    <string name="returnB">Return button image</string>
+    <string name="menuB">Menu button</string>
+    <string name="passw">Password</string>
+    <string name="email">Email</string>
+    <string name="statistics">You have wasted:</string>
+    <string name="homemenu">Home menu</string>
+    <string name="Interestsmenu">Interests</string>
+    <string name="statisticsmenu">Statistics</string>
+    <string name="wasted">You have wasted:</string>
+    <string name="nextfct">Next fact >></string>
+    <string name="paveikslėlis">Paveikslėlis, iliustruojantis faktą, bus iš duomenų bazės</string>
+    <string name="correct">Correct!</string>
+    <string name="wrong">Wrong!</string>
+
+
 </resources>

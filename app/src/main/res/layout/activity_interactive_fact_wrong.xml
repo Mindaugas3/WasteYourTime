@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fact"
+    android:background="@drawable/debesys">
+
+    <ScrollView
+        android:background="@drawable/debesys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/returnbutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/returnB"
+                android:background="@drawable/returnbutton" />
+
+            <ImageButton
+                android:id="@+id/menubutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginStart="345dp"
+                android:contentDescription="@string/menuB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/menubutton" />
+
+
+            <ImageButton
+                android:id="@+id/like"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zvaigzde"
+                android:contentDescription="@string/fav"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/neteisingai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/rectangleforfact"
+                    android:text="@string/wrong"
+                    android:textAlignment="center"
+                    android:textColor="#FF0000"
+                    android:textSize="100sp"
+                    app:fontFamily="@font/amatica_sc_bold" />
+
+
+
+                <TextView
+                    android:id="@+id/teisingasAtsakymas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textAlignment="center"
+                    app:fontFamily="@font/amatica_sc_bold" />
+
+                <ImageView
+                    android:id="@+id/teisingasPav"
+                    android:layout_width="200dp"
+                    android:layout_height="241dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    app:srcCompat="@drawable/test2" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
