@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fact"
+    android:background="@drawable/debesys">
+
+    <ScrollView
+        android:background="@drawable/debesys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/returnbutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/returnB"
+                android:background="@drawable/returnbutton" />
+
+            <ImageButton
+                android:id="@+id/menubutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginStart="345dp"
+                android:contentDescription="@string/menuB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/menubutton" />
+
+            <Button
+                android:id="@+id/nextfact"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_bg_stroke"
+                android:text="@string/nextfct"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:fontFamily="@font/amatica_sc_bold" />
+
+            <ImageButton
+                android:id="@+id/like"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zvaigzde"
+                android:contentDescription="@string/fav"/>
+
+
+                <TextView
+                    android:id="@+id/duombazesfaktas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Faktas faktas fakta aksjdfalksjfhlaksjhfdlaksjdlhakfjhslkjfhsalkjhdllaskdjflhsakdjfh alkjsdhf laksjdflhsakjflha kajhsldfkajslhfkjsalfakdjfhslakjfhl laksjdhflahkfss faktas Faktas faktas faktas faktas Faktas faktas faktas faktas Faktas faktas faktas Faktas faktas faktas Faktas faktas faktas Faktas faktas faktas Faktas faktas faktas Faktas faktas faktas Faktas faktas faktas Faktas faktas faktas"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textAlignment="center"
+                    android:drawableBottom="@drawable/test"
+                    app:fontFamily="@font/amatica_sc_bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

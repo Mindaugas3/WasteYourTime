@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".favourites">
+    tools:context=".fact"
+    android:background="@drawable/debesys">
 
     <ScrollView
         android:background="@drawable/debesys"
@@ -23,7 +23,6 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
                 android:contentDescription="@string/returnB"
                 android:background="@drawable/returnbutton" />
 
@@ -40,61 +39,70 @@
                 android:background="@drawable/menubutton" />
 
 
+            <ImageButton
+                android:id="@+id/like"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zvaigzde"
+                android:contentDescription="@string/fav"/>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
                 android:orientation="vertical">
 
+
                 <TextView
-                    android:id="@+id/FavourtitesText"
+                    android:id="@+id/neteisingai"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:text="@string/fav"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/rectangleforfact"
+                    android:text="@string/wrong"
                     android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="90sp"
-                    app:fontFamily="@font/amatica_sc_bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:textColor="#FF0000"
+                    android:textSize="100sp"
+                    app:fontFamily="@font/amatica_sc_bold" />
+
+
 
                 <TextView
-                    android:id="@+id/megstamasfaktas"
+                    android:id="@+id/teisingasAtsakymas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/background_for_favourites"
-                    android:text="Faktas faktas faktas faktas Faktas faktas faktas faktas Faktas faktas faktas faktas"
+                    android:layout_marginTop="30dp"
+                    android:text="Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas Atsakymas atsakymas atsakymas"
                     android:textColor="#000000"
                     android:textSize="40sp"
-                    app:fontFamily="@font/amatica_sc_bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <TextView
-                    android:id="@+id/megstamasfaktas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/background_for_favourites"
-                    android:text="Antras Faktas, kuris man tikrai labai patinka. Būtinai pasharinsiu jį su draugais, nors jiems visiškai neįdomu."
-                    android:textSize="40sp"
-                    android:textColor="#000000"
-                    app:fontFamily="@font/amatica_sc_bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:textAlignment="center"
+                    app:fontFamily="@font/amatica_sc_bold" />
+
+                <ImageView
+                    android:id="@+id/teisingasPav"
+                    android:layout_width="200dp"
+                    android:layout_height="241dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    app:srcCompat="@drawable/test2" />
 
             </LinearLayout>
 
 
-
-
-
-
-    </RelativeLayout>
-
+        </RelativeLayout>
     </ScrollView>
+
 
 </RelativeLayout>
