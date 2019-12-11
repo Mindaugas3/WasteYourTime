@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home_menu"
+    tools:context=".Settings"
     android:background="@drawable/debesys">
 
 
@@ -20,57 +20,61 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/returnbutton" />
 
-    <ImageButton
-        android:id="@+id/menubutton"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:contentDescription="@string/menuB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/menubutton" />
-
     <Button
-        android:id="@+id/interactiveF"
-        android:layout_width="333dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/homeMenuButton"
+        android:layout_width="342dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
         android:background="@drawable/button_bg_stroke"
-        android:text="@string/interactive"
+        android:text="@string/homemenu"
         android:textAlignment="center"
-        android:textSize="48sp"
-        app:fontFamily="@font/amatica_sc_bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RandomF" />
-
-    <Button
-        android:id="@+id/RandomF"
-        android:layout_width="333dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_bg_stroke"
-        android:text="@string/random"
-        android:textAlignment="center"
-        android:textSize="48sp"
-        app:fontFamily="@font/amatica_sc_bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wastemy" />
-
-    <TextView
-        android:id="@+id/wastemy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/waste"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="70sp"
+        android:textSize="60sp"
         app:fontFamily="@font/amatica_sc_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/megstamiausi"
+        android:layout_width="342dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg_stroke"
+        android:text="@string/fav"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:fontFamily="@font/amatica_sc_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeMenuButton" />
+
+    <Button
+        android:id="@+id/statistics"
+        android:layout_width="342dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg_stroke"
+        android:text="@string/statisticsmenu"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:fontFamily="@font/amatica_sc_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/megstamiausi" />
+
+    <Button
+        android:id="@+id/interesai"
+        android:layout_width="342dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg_stroke"
+        android:text="@string/Interestsmenu"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:fontFamily="@font/amatica_sc_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statistics" />
 </androidx.constraintlayout.widget.ConstraintLayout>

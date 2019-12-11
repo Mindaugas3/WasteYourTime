@@ -1,25 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pickInterests"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Interests"
-    android:background="@drawable/debesys">
+    tools:context=".Interests">
 
 
-    <LinearLayout
+    <ScrollView
+        android:background="@drawable/debesys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/returnbutton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/returnB"
+            android:background="@drawable/returnbutton" />
+
+        <ImageButton
+            android:id="@+id/menubutton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginStart="345dp"
+            android:contentDescription="@string/menuB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/menubutton" />
+
 
         <TextView
             android:id="@+id/interests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
             android:text="@string/interests"
             android:textAppearance="@style/Subtitle"
-            android:fontFamily="@font/amatica_sc_bold"/>
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+            app:fontFamily="@font/amatica_sc_bold" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="next>>"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+
+
+
+
+        <Button
+            android:id="@+id/animals"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/ani"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold">
+        </Button>
+
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/pressed_button"
+            android:text="@string/his"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/art"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/art"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/nature"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/pressed_button"
+            android:text="@string/nat"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/food"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pressed_button"
+            android:text="@string/food"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/movies"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+        android:background="@drawable/button_bg_stroke"
+        android:text="@string/mov"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/technoogy"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/tech"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/medicine"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/med"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/politics"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/pol"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/music"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/mus"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:id="@+id/sports"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/spo"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/sci"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="780dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/cel"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="780dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/dan"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="860dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/vid"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="860dp"
+        android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+        android:background="@drawable/button_bg_stroke"
+        android:text="@string/books"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="940dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/arch"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="940dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/beu"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="1020dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/fash"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="1020dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/tra"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="1100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/geo"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="1100dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/econ"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="1180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/cri"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="1180dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/button_bg_stroke"
+            android:text="@string/psy"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:fontFamily="@font/amatica_sc_bold"/>
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
